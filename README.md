@@ -11,10 +11,13 @@
     <li>
       <a href="#FizzBuzz solution using Machine Learning approaches with Logistic Regression algorithm">FizzBuzz solution using Machine Learning approaches with Logistic Regression algorithm</a>
       <ul>
-        <li><a href="#Structure the problem as a multi-class classification problem">Structure the problem as a multi-class classification problem/a></li>
+        <li><a href="#Structure the problem as a multi-class classification problem">Structure the problem as a multi-class classification problema </a></li>
         <li><a href="#Generate the fizzbuzz data ">Generate the fizzbuzz data</a></li>      
-        <li><a href="#Generate the fizzbuzz data ">Generate the fizzbuzz data</a></li>    
-          
+        <li><a href="#Divide the data into training and test set">Divide the data into training and test set</a></li> 
+        <li><a href="#Preprocessing data">Preprocessing data</a></li>    
+        <li><a href="#Build a logistic regression model form sklearn library">Build a logistic regression model form sklearn library</a></li>    
+        <li><a href="#Report the accuracy score with test data (1-100)">Report the accuracy score with test data (1-100)</a></li>    
+        <li><a href="#Select the best perform on different classification algorithms using a ten fold-cross validation">Select the best perform on different classification algorithms using a ten fold-cross validation</a></li>    
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -42,7 +45,7 @@ There are many approaches to solving this problem. The most popular and well-kno
 <!-- ML-FizzBuzz-Project -->
 ### FizzBuzz solution using Machine Learning approaches with Logistic Regression algorithm   
 
-     #### Structure the problem as a multi-class classification problem 
+     # Structure the problem as a multi-class classification problem 
       Fizzbuzz can be modeled as a multi-class classification problem.
        Input: The most common option, is convert the number to its binary representation. The binary representation can be fixed-length and each digit of the fixed-length binary representation can                be an input feature. 
 
