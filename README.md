@@ -1,13 +1,45 @@
-# ML-FizzBuzz-Project
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#ML-FizzBuzz-Project">ML-FizzBuzz-Project</a>
+      <ul>
+        <li><a href="#Fizz Buzz Problem Description">Fizz Buzz Problem Description</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#FizzBuzz solution using Machine Learning approaches with Logistic Regression algorithm">FizzBuzz solution using Machine Learning approaches with Logistic Regression algorithm</a>
+      <ul>
+        <li><a href="#Structure the problem as a multi-class classification problem">Structure the problem as a multi-class classification problem/a></li>
+        <li><a href="#Generate the fizzbuzz data ">Generate the fizzbuzz data</a></li>      
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
+
+<!-- ML-FizzBuzz-Project -->
+## ML-FizzBuzz-Project
 Machine Learning solution for Fizz Buzz problem
-# Fizz Buzz Problem Description 
+
+<!-- ML-FizzBuzz-Project -->
+## Fizz Buzz Problem Description 
 Write a program that given the numbers from 1 to 100 print “None” for each number. But for multiples of the three print “Fizz” instead of “None” and for the multiples of five print  “Buzz”. For numbers  which are multiples of both three an five print “FizzBuzz”.
 There are many approaches to solving this problem. The most popular and well-known solution to this problem involves using conditional statements with a loop 
 1. If the number (x) is divisible by three, the result must be “Fizz”
 2. If the number (x) is divisible by five, the result must be “Buzz”
 3. If the number (x) is divisible by both three and five, the result must be “FizzBuzz” 
 4. Else the result must be “None”
-# FizzBuzz solution using Machine Learning approaches with Logistic Regression algorithm
+
+<!-- ML-FizzBuzz-Project -->
+### FizzBuzz solution using Machine Learning approaches with Logistic Regression algorithm   
+
     • Structure the problem as a multi-class classification problem 
       Fizzbuzz can be modeled as a multi-class classification problem.
        Input: The most common option, is convert the number to its binary representation. The binary representation can be fixed-length and each digit of the fixed-length binary representation can                be an input feature. 
@@ -52,7 +84,7 @@ There are many approaches to solving this problem. The most popular and well-kno
             def binary_encode(i, num_digits):
             return np.array([i >> d & 1 for d in range(num_digits)])
 
-    • Divide the data into train and test
+    • Divide the data into training and test set
       The data was splited in training and test sets. 
        Training set contained all the value with index start in 100 and end = length_data.  
        Test set we use the first 100 number.
