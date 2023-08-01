@@ -1,8 +1,6 @@
-<!-- ML-FizzBuzz-Project -->
 # ML FizzBuzz Project
 Machine Learning solution for Fizz Buzz problem
 
-<!-- Fizz Buzz Problem Description -->
 ## Fizz Buzz problem description 
     Write a program that given the numbers from 1 to 100 print “None” for each number. But for multiples of the three print “Fizz” instead of “None” and for the multiples of five print  “Buzz”.
     For numbers  which are multiples of both three an five print “FizzBuzz”.
@@ -14,7 +12,6 @@ Machine Learning solution for Fizz Buzz problem
 
 <image src="FizzBuzz.png" alt="Descripción de la imagen">
 
-<!-- ML-FizzBuzz-Project -->
 ## FizzBuzz solution using Machine Learning approaches  
 
 ### Structure as a multi-class classification problem 
@@ -63,7 +60,7 @@ Machine Learning solution for Fizz Buzz problem
               def binary_encode(i, num_digits):
                  return np.array([i >> d & 1 for d in range(num_digits)])
              ```  
-  ### Preprocessing-data
+  ### Preprocessing data
        StandardScaler() method calculates the mean and the standard deviation to use later for scaling the data. This method fits the parameters of the data and then transforms it. Standardize             features by removing the mean and scaling to unit variance.
        ```
         # Preprocessing the data
@@ -73,7 +70,7 @@ Machine Learning solution for Fizz Buzz problem
         X_test_std = sc.transform(X_test)
         ```
     
-  ### Build-a-logistic-regression-model 
+  ### Build a Logistic-Regression model 
        For uses the cross-entropy loss if the ‘multi_class’ option is set to ‘multinomial’. 
        Implementation in python
        ```
@@ -82,7 +79,7 @@ Machine Learning solution for Fizz Buzz problem
        softmax_reg.fit(X, y)
        ```
     
-  ### Report-the-accuracy-score
+  ### Report the accuracy score
        The accuracy score was calculated with the test data.
        ```
         score = softmax_reg.score(X_test, y_test)
@@ -90,7 +87,7 @@ Machine Learning solution for Fizz Buzz problem
         The model report an: Accuracy_LR_softmax: 0.53 %
         ```
         
-  ### Best-perform-on-different-classification-algorithms-using-a-ten-fold-cross-validation
+  ### Best perform on different classification algorithms using a ten fold Cross-Validation
        
        kFold = KFold(n_splits=10, random_state=42, shuffle=True)
        For each algorithm classification were calculated the accuracy score and save in a numpy by row. 
@@ -101,4 +98,4 @@ Machine Learning solution for Fizz Buzz problem
        To report the best accuracy were calculated the maximum of the accuracy’s mean for each algorithm.
        The best models are Logistic Regression and Support Vector Machine with accuracy = 0.5351020408163266 
  
-# FizzBuzz solution using Neural Network approaches
+## FizzBuzz solution using Neural Network approaches
