@@ -99,7 +99,9 @@ def binary_encode(i, num_digits):
 ```  
 ### Preprocessing data
 
-StandardScaler() method calculates the mean and the standard deviation to use later for scaling the data. This method fits the parameters of the data and then transforms it. Standardize             features by removing the mean and scaling to unit variance.
+StandardScaler() method calculates the mean and the standard deviation to use later for scaling the data. 
+This method fits the parameters of the data and then transforms it. Standardizefeatures by removing the 
+mean and scaling to unit variance.
        
 ``` python:
 # Preprocessing the data
@@ -126,16 +128,22 @@ The accuracy score was calculated with the test data.
 score = softmax_reg.score(X_test, y_test)
 print("Accuracy_LR_softmax:", score)
 ```
-* The model report an: Accuracy_LR_softmax: 0.53 *      
-  ### Best perform on different classification algorithms using a ten fold Cross-Validation
- ```python:      
-       kFold = KFold(n_splits=10, random_state=42, shuffle=True)
-       For each algorithm classification were calculated the accuracy score and save in a numpy by row. 
-       KNN– K- Nearest Neighbors Classifier (KNN)
-       Random Forest (RF)
-       Support Vector Machine (SVM)
-       Stochastic Gradient Descent Classifier (SGDC)
-       To report the best accuracy were calculated the maximum of the accuracy’s mean for each algorithm.
-       The best models are Logistic Regression and Support Vector Machine with accuracy = 0.5351020408163266 
+*The model report an: Accuracy_LR_softmax: 0.53*     
+
+### Best perform on different classification algorithms using a ten fold Cross-Validation
+
+ ```python:
+ kFold = KFold(n_splits=10, random_state=42, shuffle=True)
+ ```
+ For each algorithm classification were calculated the accuracy score and save in a numpy by row:
  
+ 1. KNN– K- Nearest Neighbors Classifier (KNN)
+ 2. Random Forest (RF)
+ 3. Support Vector Machine (SVM)
+ 4. Stochastic Gradient Descent Classifier (SGDC)
+    
+ To report the best accuracy were calculated the maximum of the accuracy’s mean for each algorithm.
+ 
+ The best models are Logistic Regression and Support Vector Machine with accuracy = 0.5351020408163266 
+
 ## FizzBuzz solution using Neural Network approaches
