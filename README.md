@@ -10,9 +10,9 @@ There are many approaches to solving this problem. The most popular and well-kno
 involves using conditional statements with a loop 
     
 1. If the number (x) is divisible by three, the result must be “Fizz”
-1. If the number (x) is divisible by five, the result must be “Buzz”
-1. If the number (x) is divisible by both three and five, the result must be “FizzBuzz” 
-1. Else the result must be “None”
+2. If the number (x) is divisible by five, the result must be “Buzz”1.
+3. If the number (x) is divisible by both three and five, the result must be “FizzBuzz”
+4. Else the result must be “None”
 
 <image src="FizzBuzz.png" alt="Descripción de la imagen">
 
@@ -41,9 +41,10 @@ Since we are dealing with categorical variables, logistical models must be used 
 labels of the data. 
 
 There are three types of Logistic Regression:
-      1) Binomial: Where target variable is one of two classes
-      2) Multinomial: Where the target variable has three or more possible classes
-      3) Ordinal: Where the target variables have ordered categories
+
+1. Binomial: Where target variable is one of two classes
+2. Multinomial: Where the target variable has three or more possible classes
+3. Ordinal: Where the target variables have ordered categories
 
 The Logistic Regression model can be generalized to support multiple classes directly, without having to train
 and combine multiple binary classifiers. This is called Softmax Regression, or Multinomial Logistic Regression.
