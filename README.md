@@ -72,7 +72,6 @@ $$s_k(x) = \theta_k^T \cdot x $$Equation (3)
 To generate the FizzBuzz data, the Dataset_Generator_ML_Fizz_Buzz(length_data, num_digits) function was defined: 
 
 **Input**: length_data: the total of integer that we use in the model.
-   
            num_digits: the fixed-length binary representation can be 8, 10, 16, 32, 64. 
 
 For example if length_data= 1024 we create the Input data as binary encoding from 1, 2, 3,...,1024 and num_digits is the length of the binary representation that will be encoding
