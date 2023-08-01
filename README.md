@@ -65,7 +65,7 @@ Machine Learning solution for Fizz Buzz problem
           Two additional helper function were defined:
 
           # A boolean function return true or false if value is multiple of the 'multiple' value
-            ```
+            ```python:
              def multiple(value, multiple):
                  return True if value % multiple == 0 else False 
           
