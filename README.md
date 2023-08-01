@@ -31,9 +31,7 @@ Fizzbuzz can be modeled as a multi-class classification problem.
             After the four classes are encoded and the model is built, it will return one of 
             four prediction labels. So we will also need a decoder function to convert the label 
             to the corresponding output.
-
-        Imagen under construction
-
+       
 **Model**: Logistic Regression (also called Logit Regression) is commonly used to estimate the probability that an 
                instance belongs to a particular class. 
                Logistic Regression is a classification algorithm used when the dependent (target) variables are categorical
