@@ -47,17 +47,19 @@ Machine Learning solution for Fizz Buzz problem
               This is called Softmax Regression, or Multinomial Logistic Regression.
 
 
-              <image src="Eqn-1.svg" alt="Descripción de la imagen">
+              <image src="Eqn1.svg" alt="Descripción de la imagen">
+
+               <image src="Eqn1.svg" alt="Descripción de la imagen">
               
   ### Generate FizzBuzz data         
        To generate the FizzBuzz data, the Dataset_Generator_ML_Fizz_Buzz(length_data, num_digits) function was defined: 
-           *Input* : length_data: the total of integer that we use in the model. 
+            Input : length_data: the total of integer that we use in the model. 
                        num_digits: the fixed-length binary representation can be 8, 10, 16, 32, 64. 
 
         For example if length_data= 1024 we create the Input data as binary encoding from 1, 2, 3, …. until 1024 and num_digits is the length of the binary representation that will be encoding
         the number. 
 
-            **Return**: X and y as a numpy array. 
+            Return: X and y as a numpy array. 
                     X contain the number encoding in binary representation. 
                     y the labels fizz, buzz, fizzbuzz or none according to the number.  
                    ```
@@ -69,6 +71,7 @@ Machine Learning solution for Fizz Buzz problem
           Two additional helper function were defined:
 
           # A boolean function return true or false if value is multiple of the 'multiple' value
+          
             ```python:
              def multiple(value, multiple):
                  return True if value % multiple == 0 else False 
@@ -79,6 +82,7 @@ Machine Learning solution for Fizz Buzz problem
              ```  
   ### Preprocessing data
        StandardScaler() method calculates the mean and the standard deviation to use later for scaling the data. This method fits the parameters of the data and then transforms it. Standardize             features by removing the mean and scaling to unit variance.
+       
        ```
         # Preprocessing the data
         sc = preprocessing.StandardScaler()
@@ -108,10 +112,10 @@ Machine Learning solution for Fizz Buzz problem
        
        kFold = KFold(n_splits=10, random_state=42, shuffle=True)
        For each algorithm classification were calculated the accuracy score and save in a numpy by row. 
-       **KNN** – K- Nearest Neighbors Classifier (KNN)
-       **Random Forest** -(RF)
-       **Support Vector Machine** (SVM)
-       **Stochastic Gradient Descent Classifier** (SGDC)
+       KNN– K- Nearest Neighbors Classifier (KNN)
+       Random Forest (RF)
+       Support Vector Machine (SVM)
+       Stochastic Gradient Descent Classifier (SGDC)
        To report the best accuracy were calculated the maximum of the accuracy’s mean for each algorithm.
        The best models are Logistic Regression and Support Vector Machine with accuracy = 0.5351020408163266 
  
