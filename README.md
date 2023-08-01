@@ -48,12 +48,12 @@ Machine Learning solution for Fizz Buzz problem
               The idea is quite simple: when given an instance x, the Softmax Regression model first computes a score sk(x) for each class k, then estimates the probability of each 
               class by applying the somax function (also called the normalized exponential) to the scores. The equation to compute sk(x) should look familiar, as it is just like the 
               equation for Linear Regression prediction (see Equation 1).
-<image src="Eqn1.png" alt="Descripción de la imagen">
+<image src="Eqn1.png" alt="Descripción de la imagen">   Equation 1
 
               Just like the Logistic Regression classifier, the Softmax Regression classifier predicts the class with the highest estimated probability (which is simply the class with
               the highest score), as shown in Equation 2.
 
-<image src="Eqn2.png" alt="Descripción de la imagen">
+<image src="Eqn2.png" alt="Descripción de la imagen">   Equation 2
               
   ### Generate FizzBuzz data         
        To generate the FizzBuzz data, the Dataset_Generator_ML_Fizz_Buzz(length_data, num_digits) function was defined: 
