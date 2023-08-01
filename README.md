@@ -61,7 +61,7 @@ highest estimated probability (which is simply the class with the highest score)
 $\hat{y} = argmax_k \sigma(s(x)_k)$
 
 
-$\hat{y} = argmax_k \frac{exp(s_k(x))}{\sum_{j=1}^{K}exp(s_j(x))}$ Equation (2) 
+$\hat{y} = argmax_k \frac{exp(s_k(x))}{\sum_{j=1}^{K}exp(s_j(x))}$  Equation (2) 
 
 $argmax_k \sigma(s(x))_k$
 
