@@ -1,9 +1,9 @@
 <!-- ML-FizzBuzz-Project -->
-# ML-FizzBuzz-Project
+# ML FizzBuzz Project
 Machine Learning solution for Fizz Buzz problem
 
 <!-- Fizz Buzz Problem Description -->
-## Fizz-buzz-problem-description 
+## Fizz Buzz problem description 
     Write a program that given the numbers from 1 to 100 print “None” for each number. But for multiples of the three print “Fizz” instead of “None” and for the multiples of five print  “Buzz”.
     For numbers  which are multiples of both three an five print “FizzBuzz”.
     There are many approaches to solving this problem. The most popular and well-known solution to this problem involves using conditional statements with a loop 
@@ -15,9 +15,9 @@ Machine Learning solution for Fizz Buzz problem
 <image src="FizzBuzz.png" alt="Descripción de la imagen">
 
 <!-- ML-FizzBuzz-Project -->
-## FizzBuzz-solution-using-Machine-Learning-approaches  
+## FizzBuzz solution using Machine Learning approaches  
 
-### Structure-as-a-multi-class-classification-problem 
+### Structure as a multi-class classification problem 
       Fizzbuzz can be modeled as a multi-class classification problem.
        Input: The most common option, is convert the number to its binary representation. The binary representation can be fixed-length and each digit of the fixed-length binary representation                  can be an input feature. 
 
@@ -35,9 +35,9 @@ Machine Learning solution for Fizz Buzz problem
 
               The Logistic Regression model can be generalized to support multiple classes directly, without having to train and combine multiple binary classifiers. This is called Softmax                        Regression, or Multinomial Logistic Regression.
               
-  ### Generate-the-fizzbuzz-data         
+  ### Generate FizzBuzz data         
        To generate the FizzBuzz data, the Dataset_Generator_ML_Fizz_Buzz(length_data, num_digits) function was defined: 
-           **Input** : length_data: the total of integer that we use in the model. 
+           *Input* : length_data: the total of integer that we use in the model. 
                        num_digits: the fixed-length binary representation can be 8, 10, 16, 32, 64. 
 
         For example if length_data= 1024 we create the Input data as binary encoding from 1, 2, 3, …. until 1024 and num_digits is the length of the binary representation that will be encoding
