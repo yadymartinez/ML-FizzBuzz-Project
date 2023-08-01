@@ -50,7 +50,8 @@ Machine Learning solution for Fizz Buzz problem
               equation for Linear Regression prediction (see Equation 1).
 <image src="Eqn1.png" alt="Descripción de la imagen">
 
-
+              Just like the Logistic Regression classifier, the Softmax Regression classifier predicts the class with the highest estimated probability (which is simply the class with
+              the highest score), as shown in Equation 2.
 
 <image src="Eqn2.png" alt="Descripción de la imagen">
               
