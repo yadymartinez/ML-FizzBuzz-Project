@@ -46,10 +46,7 @@ Machine Learning solution for Fizz Buzz problem
               The Logistic Regression model can be generalized to support multiple classes directly, without having to train and combine multiple binary classifiers. 
               This is called Softmax Regression, or Multinomial Logistic Regression.
 
-
-          
-
-              <image src="Eqn2.png" alt="Descripción de la imagen">
+<image src="Eqn2.png" alt="Descripción de la imagen">
               
   ### Generate FizzBuzz data         
        To generate the FizzBuzz data, the Dataset_Generator_ML_Fizz_Buzz(length_data, num_digits) function was defined: 
