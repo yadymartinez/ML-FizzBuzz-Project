@@ -53,9 +53,7 @@ each class $k$, then estimates the probability of each class by applying the som
 exponential) to the scores. The equation to compute $s_k(x)$ should look familiar, as it is just like the equation for Linear
 Regression prediction (see Equation 1).
 
-$$
-s_k(x) = \theta_k^T \cdot x
-$$
+$s_k(x) = \theta_k^T \cdot x $
 
 <image src="Eqn1.png" alt="Descripción de la imagen">           Eqn (1)
 
