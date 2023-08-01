@@ -37,21 +37,23 @@ Fizzbuzz can be modeled as a multi-class classification problem.
            Logistic Regression is a classification algorithm used when the dependent (target) variables are categorical
            in nature- meaning the data can be grouped into discrete outputs ${0, 1, ..., k − 1}$.
 
-               Since we are dealing with categorical variables, logistical models must be used to map probabilities to predicted
-               labels of the data. 
+           Since we are dealing with categorical variables, logistical models must be used to map probabilities to predicted
+           labels of the data. 
 
-               There are three types of Logistic Regression:
-                    1) Binomial: Where target variable is one of two classes
-                    2) Multinomial: Where the target variable has three or more possible classes
-                    3) Ordinal: Where the target variables have ordered categories
+           There are three types of Logistic Regression:
+               1) Binomial: Where target variable is one of two classes
+               2) Multinomial: Where the target variable has three or more possible classes
+               3) Ordinal: Where the target variables have ordered categories
 
-              The Logistic Regression model can be generalized to support multiple classes directly, without having to train
-              and combine multiple binary classifiers. This is called Softmax Regression, or Multinomial Logistic Regression.
-              The idea is quite simple: when given an instance x, the Softmax Regression model first computes a score sk(x) for 
-              each class k, then estimates the probability of each class by applying the somax function (also called the normalized
-              exponential) to the scores. The equation to compute sk(x) should look familiar, as it is just like the equation for Linear
-              Regression prediction (see Equation 1).
-              
+            The Logistic Regression model can be generalized to support multiple classes directly, without having to train
+            and combine multiple binary classifiers. This is called Softmax Regression, or Multinomial Logistic Regression.
+            The idea is quite simple: when given an instance $x$, the Softmax Regression model first computes a score $s_k(x)$ for 
+            each class $k$, then estimates the probability of each class by applying the somax function (also called the normalized
+            exponential) to the scores. The equation to compute $s_k(x)$ should look familiar, as it is just like the equation for Linear
+            Regression prediction (see Equation 1).
+              $$
+               $s_k(x)$
+              $$
 <image src="Eqn1.png" alt="Descripción de la imagen">           Eqn (1)
 
               Just like the Logistic Regression classifier, the Softmax Regression classifier predicts the class with the
