@@ -21,7 +21,8 @@ involves using conditional statements with a loop
 ### Structure as a multi-class classification problem 
 
 Fizzbuzz can be modeled as a multi-class classification problem.
-*Input*: The most common option, is convert the number to its binary representation. 
+
+**Input**: The most common option, is convert the number to its binary representation. 
               The binary representation can be fixed-length and each digit of the fixed-length 
               binary representation can be an input feature. 
 
