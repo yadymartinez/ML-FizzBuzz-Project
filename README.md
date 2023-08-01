@@ -49,7 +49,7 @@ Machine Learning solution for Fizz Buzz problem
 
             <image src="Eqn1.svg" alt="Descripción de la imagen">
 
-            <image src="Eqn2.svg" alt="Descripción de la imagen">
+            <image src="Eqn2.png" alt="Descripción de la imagen">
               
   ### Generate FizzBuzz data         
        To generate the FizzBuzz data, the Dataset_Generator_ML_Fizz_Buzz(length_data, num_digits) function was defined: 
