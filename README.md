@@ -74,7 +74,7 @@ $\bigtriangledown \theta_k J(\Theta) = \frac{1}{m}\sum_{i=1}^{m}(\hat{p}_k^{(i)}
 Now, the gradient vector for every class can be compute, using Gradient Descent(or any other optimization algorithm) to find the parameter matrix $\Theta$ that minimizes
 the cost function.
 
-<image src="FizzBuzzModel.png" alt="Descripción de la imagen">
+<image src="FizzBuzzModel.PNG" alt="Descripción de la imagen">
               
 ### Generate FizzBuzz data
 
