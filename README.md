@@ -9,7 +9,7 @@
       </ul>
     </li>
     <li>
-      <a href="#FizzBuzz solution using Machine Learning approaches with Logistic Regression algorithm">FizzBuzz solution using Machine Learning approaches with Logistic Regression algorithm</a>
+      <a href="#FizzBuzz-solution-using-Machine-Learning-approaches">FizzBuzz solution using Machine Learning approaches</a>
       <ul>
         <li><a href="#Structure the problem as a multi-class classification problema">Structure the problem as a multi-class classification problema </a></li>
         <li><a href="#Generate the fizzbuzz data ">Generate the fizzbuzz data</a></li>      
@@ -35,7 +35,7 @@
 Machine Learning solution for Fizz Buzz problem
 
 <!-- Fizz Buzz Problem Description -->
-### fizz-buzz-problem-description 
+### Fizz-buzz-problem-description 
     Write a program that given the numbers from 1 to 100 print “None” for each number. But for multiples of the three print “Fizz” instead of “None” and for the multiples of five print  “Buzz”.       For numbers  which are multiples of both three an five print “FizzBuzz”.
     There are many approaches to solving this problem. The most popular and well-known solution to this problem involves using conditional statements with a loop 
         1. If the number (x) is divisible by three, the result must be “Fizz”
@@ -44,7 +44,7 @@ Machine Learning solution for Fizz Buzz problem
         4. Else the result must be “None”
 
 <!-- ML-FizzBuzz-Project -->
-## FizzBuzz solution using Machine Learning approaches with Logistic Regression algorithm   
+## FizzBuzz-solution-using-Machine-Learning-approaches  
 
 ## Structure the problem as a multi-class classification problem 
       Fizzbuzz can be modeled as a multi-class classification problem.
