@@ -60,10 +60,7 @@ highest estimated probability (which is simply the class with the highest score)
 
 $\hat{y} = argmax_k \sigma(s(x)_k)$
 
-
 $\hat{y} = argmax_k \frac{exp(s_k(x))}{\sum_{j=1}^{K}exp(s_j(x))}$  Equation (2) 
-
-$argmax_k \sigma(s(x))_k$
 
 $\sigma(s(x))_k$ is the estimated probability that the instance $x$ belongs to class $k$ given the scores of each class for that instance.
 
