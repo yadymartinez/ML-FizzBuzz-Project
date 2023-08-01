@@ -126,9 +126,9 @@ The accuracy score was calculated with the test data.
 score = softmax_reg.score(X_test, y_test)
 print("Accuracy_LR_softmax:", score)
 ```
-*The model report an: Accuracy_LR_softmax: 0.53 *      
+* The model report an: Accuracy_LR_softmax: 0.53 *      
   ### Best perform on different classification algorithms using a ten fold Cross-Validation
-       
+ ```python:      
        kFold = KFold(n_splits=10, random_state=42, shuffle=True)
        For each algorithm classification were calculated the accuracy score and save in a numpy by row. 
        KNN– K- Nearest Neighbors Classifier (KNN)
