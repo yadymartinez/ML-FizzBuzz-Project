@@ -5,7 +5,7 @@
     <li>
       <a href="#ML-FizzBuzz-Project">ML-FizzBuzz-Project</a>
       <ul>
-        <li><a href="#Fizz Buzz Problem Description">Fizz Buzz Problem Description</a></li>
+        <li><a href="#fizz-buzz-problem-description">Fizz Buzz Problem Description</a></li>
       </ul>
     </li>
     <li>
@@ -35,7 +35,7 @@
 Machine Learning solution for Fizz Buzz problem
 
 <!-- Fizz Buzz Problem Description -->
-### Fizz Buzz Problem Description 
+### fizz-buzz-problem-description 
     Write a program that given the numbers from 1 to 100 print “None” for each number. But for multiples of the three print “Fizz” instead of “None” and for the multiples of five print  “Buzz”.       For numbers  which are multiples of both three an five print “FizzBuzz”.
     There are many approaches to solving this problem. The most popular and well-known solution to this problem involves using conditional statements with a loop 
         1. If the number (x) is divisible by three, the result must be “Fizz”
