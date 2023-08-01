@@ -35,7 +35,8 @@ Machine Learning solution for Fizz Buzz problem
 
 <!-- Fizz Buzz Problem Description -->
 ### Fizz-buzz-problem-description 
-    Write a program that given the numbers from 1 to 100 print “None” for each number. But for multiples of the three print “Fizz” instead of “None” and for the multiples of five print  “Buzz”.       For numbers  which are multiples of both three an five print “FizzBuzz”.
+    Write a program that given the numbers from 1 to 100 print “None” for each number. But for multiples of the three print “Fizz” instead of “None” and for the multiples of five print  “Buzz”.
+    For numbers  which are multiples of both three an five print “FizzBuzz”.
     There are many approaches to solving this problem. The most popular and well-known solution to this problem involves using conditional statements with a loop 
         1. If the number (x) is divisible by three, the result must be “Fizz”
         2. If the number (x) is divisible by five, the result must be “Buzz”
@@ -49,13 +50,13 @@ Machine Learning solution for Fizz Buzz problem
 
 ## Structure-as-a-multi-class-classification-problem 
       Fizzbuzz can be modeled as a multi-class classification problem.
-        Input: The most common option, is convert the number to its binary representation. The binary representation can be fixed-length and each digit of the fixed-length binary representation                  can be an input feature. 
+       **Input**: The most common option, is convert the number to its binary representation. The binary representation can be fixed-length and each digit of the fixed-length binary representation                  can be an input feature. 
 
-        Target: The target can be one of the four classes - fizz, buzz, fizzbuzz or none. The model should predict which of the classes is most likely for an input number. After the four classes                    are encoded and the model is built, it will return one of four prediction labels. So we will also need a decoder function to convert the label to the corresponding output.
+       **Target**: The target can be one of the four classes - fizz, buzz, fizzbuzz or none. The model should predict which of the classes is most likely for an input number. After the four classes                    are encoded and the model is built, it will return one of four prediction labels. So we will also need a decoder function to convert the label to the corresponding output.
 
         Imagen under construction
 
-        Model: Logistic Regression (also called Logit Regression) is commonly used to estimate the probability that an instance belongs to a particular class. Logistic Regression is a                              classification algorithm used when the dependent (target) variables are categorical in nature- meaning the data can be grouped into discrete outputs {0, 1, ..., k − 1}.
+        **Model**: Logistic Regression (also called Logit Regression) is commonly used to estimate the probability that an instance belongs to a particular class. Logistic Regression is a                              classification algorithm used when the dependent (target) variables are categorical in nature- meaning the data can be grouped into discrete outputs {0, 1, ..., k − 1}.
                Since we are dealing with categorical variables, logistical models must be used to map probabilities to predicted labels of the data. 
 
                There are three types of Logistic Regression:
@@ -67,13 +68,13 @@ Machine Learning solution for Fizz Buzz problem
               
   ## Generate-the-fizzbuzz-data         
        To generate the FizzBuzz data, the Dataset_Generator_ML_Fizz_Buzz(length_data, num_digits) function was defined: 
-           Input : length_data: the total of integer that we use in the model. 
-           num_digits: the fixed-length binary representation can be 8, 10, 16, 32, 64. 
+           **Input** : length_data: the total of integer that we use in the model. 
+                       num_digits: the fixed-length binary representation can be 8, 10, 16, 32, 64. 
 
         For example if length_data= 1024 we create the Input data as binary encoding from 1, 2, 3, …. until 1024 and num_digits is the length of the binary representation that will be encoding
         the number. 
 
-            Return: X and y as a numpy array. 
+            **Return**: X and y as a numpy array. 
                     X contain the number encoding in binary representation. 
                     y the labels fizz, buzz, fizzbuzz or none according to the number.  
                    ```
@@ -124,10 +125,10 @@ Machine Learning solution for Fizz Buzz problem
        
        kFold = KFold(n_splits=10, random_state=42, shuffle=True)
        For each algorithm classification were calculated the accuracy score and save in a numpy by row. 
-       KNN – K- Nearest Neighbors Classifier (KNN)
-       Random Forest -(RF)
-       Support Vector Machine (SVM)
-       Stochastic Gradient Descent Classifier (SGDC)
+       **KNN** – K- Nearest Neighbors Classifier (KNN)
+       **Random Forest** -(RF)
+       **Support Vector Machine** (SVM)
+       **Stochastic Gradient Descent Classifier** (SGDC)
        To report the best accuracy were calculated the maximum of the accuracy’s mean for each algorithm.
        The best models are Logistic Regression and Support Vector Machine with accuracy = 0.5351020408163266 
  
