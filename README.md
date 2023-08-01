@@ -5,8 +5,10 @@ Machine Learning solution for Fizz Buzz problem
     Write a program that given the numbers from 1 to 100 print “None” for each number. 
     But for multiples of the three print “Fizz” instead of “None” and for the multiples of five print  “Buzz”.
     For numbers  which are multiples of both three an five print “FizzBuzz”.
+    
     There are many approaches to solving this problem. The most popular and well-known solution to this problem 
     involves using conditional statements with a loop 
+    
         1. If the number (x) is divisible by three, the result must be “Fizz”
         2. If the number (x) is divisible by five, the result must be “Buzz”
         3. If the number (x) is divisible by both three and five, the result must be “FizzBuzz” 
@@ -18,13 +20,21 @@ Machine Learning solution for Fizz Buzz problem
 
 ### Structure as a multi-class classification problem 
       Fizzbuzz can be modeled as a multi-class classification problem.
-       Input: The most common option, is convert the number to its binary representation. The binary representation can be fixed-length and each digit of the fixed-length binary representation                  can be an input feature. 
+       Input: The most common option, is convert the number to its binary representation. 
+              The binary representation can be fixed-length and each digit of the fixed-length 
+              binary representation can be an input feature. 
 
-       **Target**: The target can be one of the four classes - fizz, buzz, fizzbuzz or none. The model should predict which of the classes is most likely for an input number. After the four classes                    are encoded and the model is built, it will return one of four prediction labels. So we will also need a decoder function to convert the label to the corresponding output.
+       Target: The target can be one of the four classes - fizz, buzz, fizzbuzz or none. 
+               The model should predict which of the classes is most likely for an input number. 
+               After the four classes are encoded and the model is built, it will return one of 
+               four prediction labels. So we will also need a decoder function to convert the label 
+               to the corresponding output.
 
         Imagen under construction
 
-        **Model**: Logistic Regression (also called Logit Regression) is commonly used to estimate the probability that an instance belongs to a particular class. Logistic Regression is a                              classification algorithm used when the dependent (target) variables are categorical in nature- meaning the data can be grouped into discrete outputs {0, 1, ..., k − 1}.
+        Model: Logistic Regression (also called Logit Regression) is commonly used to estimate the probability that an instance belongs to a particular class. 
+               Logistic Regression is a classification algorithm used when the dependent (target) variables are categorical in nature- meaning the data can be 
+               grouped into discrete outputs ${0, 1, ..., k − 1}$.
                Since we are dealing with categorical variables, logistical models must be used to map probabilities to predicted labels of the data. 
 
                There are three types of Logistic Regression:
@@ -32,7 +42,8 @@ Machine Learning solution for Fizz Buzz problem
                     2) Multinomial: Where the target variable has three or more possible classes
                     3) Ordinal: Where the target variables have ordered categories
 
-              The Logistic Regression model can be generalized to support multiple classes directly, without having to train and combine multiple binary classifiers. This is called Softmax                        Regression, or Multinomial Logistic Regression.
+              The Logistic Regression model can be generalized to support multiple classes directly, without having to train and combine multiple binary classifiers. 
+              This is called Softmax Regression, or Multinomial Logistic Regression.
               
   ### Generate FizzBuzz data         
        To generate the FizzBuzz data, the Dataset_Generator_ML_Fizz_Buzz(length_data, num_digits) function was defined: 
