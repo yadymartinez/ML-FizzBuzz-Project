@@ -23,18 +23,18 @@ involves using conditional statements with a loop
 Fizzbuzz can be modeled as a multi-class classification problem.
 
 **Input**: The most common option, is convert the number to its binary representation. 
-              The binary representation can be fixed-length and each digit of the fixed-length 
-              binary representation can be an input feature. 
+           The binary representation can be fixed-length and each digit of the fixed-length 
+           binary representation can be an input feature. 
 
-Target: The target can be one of the four classes - fizz, buzz, fizzbuzz or none. 
-               The model should predict which of the classes is most likely for an input number. 
-               After the four classes are encoded and the model is built, it will return one of 
-               four prediction labels. So we will also need a decoder function to convert the label 
-               to the corresponding output.
+**Target**: The target can be one of the four classes - fizz, buzz, fizzbuzz or none. 
+            The model should predict which of the classes is most likely for an input number. 
+            After the four classes are encoded and the model is built, it will return one of 
+            four prediction labels. So we will also need a decoder function to convert the label 
+            to the corresponding output.
 
         Imagen under construction
 
-        Model: Logistic Regression (also called Logit Regression) is commonly used to estimate the probability that an 
+**Model**: Logistic Regression (also called Logit Regression) is commonly used to estimate the probability that an 
                instance belongs to a particular class. 
                Logistic Regression is a classification algorithm used when the dependent (target) variables are categorical
                in nature- meaning the data can be grouped into discrete outputs {0, 1, ..., k − 1}.
