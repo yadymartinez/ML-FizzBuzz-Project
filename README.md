@@ -53,7 +53,7 @@ each class $k$, then estimates the probability of each class by applying the som
 exponential) to the scores. The equation to compute $s_k(x)$ should look familiar, as it is just like the equation for Linear
 Regression prediction (see Equation 1).
 
-$$s_k(x) = \theta_k^T \cdot x $$Equation (1)
+$s_k(x) = \theta_k^T \cdot x $ Equation (1)
 
 Just like the Logistic Regression classifier, the Softmax Regression classifier predicts the class with the
 highest estimated probability (which is simply the class with the highest score), as shown in Equation 2.
