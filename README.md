@@ -53,25 +53,27 @@ each class $k$, then estimates the probability of each class by applying the som
 exponential) to the scores. The equation to compute $s_k(x)$ should look familiar, as it is just like the equation for Linear
 Regression prediction (see Equation 1).
 
-$$s_k(x) = \theta_k^T \cdot x $$   Equation (1)
+$$s_k(x) = \theta_k^T \cdot x $$Equation (1)
 
 Just like the Logistic Regression classifier, the Softmax Regression classifier predicts the class with the
 highest estimated probability (which is simply the class with the highest score), as shown in Equation 2.
 
+$$s_k(x) = \theta_k^T \cdot x $$Equation (2)
 
 The objective is to have a model that estimates a high probability for the target class (and consequently
 a low probability for the other classes). Minimizing the cost function shown in Equation 3, called the cross
 entropy, should lead to this objective because it penalizes the model when it estimates a low probability for a target class.
              
-<image src="Eqn3.png" alt="Descripción de la imagen">           Eqn (3)
+$$s_k(x) = \theta_k^T \cdot x $$Equation (3)
 
               
 ### Generate FizzBuzz data
 
 To generate the FizzBuzz data, the Dataset_Generator_ML_Fizz_Buzz(length_data, num_digits) function was defined: 
 
-**Input**: length_data: the total of integer that we use in the model. 
-            num_digits: the fixed-length binary representation can be 8, 10, 16, 32, 64. 
+**Input**: length_data: the total of integer that we use in the model.
+   
+           num_digits: the fixed-length binary representation can be 8, 10, 16, 32, 64. 
 
 For example if length_data= 1024 we create the Input data as binary encoding from 1, 2, 3,...,1024 and num_digits is the length of the binary representation that will be encoding
 the number. 
@@ -87,7 +89,7 @@ y = label_encoder.fit_transform(y.T)
 ```  
 Two additional helper function were defined:
 
- ```python:
+```python:
 # A boolean function return true or false if value is multiple of the 'multiple' value    
  def multiple(value, multiple):
     return True if value % multiple == 0 else False 
@@ -100,25 +102,27 @@ def binary_encode(i, num_digits):
 
 StandardScaler() method calculates the mean and the standard deviation to use later for scaling the data. This method fits the parameters of the data and then transforms it. Standardize             features by removing the mean and scaling to unit variance.
        
-       ```
-        # Preprocessing the data
-        sc = preprocessing.StandardScaler()
-        sc.fit(X_train)
-        X_train_std = sc.transform(X_train)
-        X_test_std = sc.transform(X_test)
-        ```
+``` python:
+# Preprocessing the data
+sc = preprocessing.StandardScaler()
+sc.fit(X_train)
+X_train_std = sc.transform(X_train)
+X_test_std = sc.transform(X_test)
+```
     
-  ### Build a Logistic-Regression model 
-       For uses the cross-entropy loss if the ‘multi_class’ option is set to ‘multinomial’. 
-       Implementation in python
-       ```
-       # Logistic Regression Model for multi-class classification, l2-regularization
-       softmax_reg = LogisticRegression(multi_class="multinomial", solver="lbfgs")
-       softmax_reg.fit(X, y)
-       ```
+### Build a Logistic-Regression model 
+
+For uses the cross-entropy loss if the ‘multi_class’ option is set to ‘multinomial’. 
+Implementation in python
+```python:
+# Logistic Regression Model for multi-class classification, l2-regularization
+softmax_reg = LogisticRegression(multi_class="multinomial", solver="lbfgs")
+softmax_reg.fit(X, y)
+```
     
-  ### Report the accuracy score
-       The accuracy score was calculated with the test data.
+### Report the accuracy score
+
+The accuracy score was calculated with the test data.
        ```
         score = softmax_reg.score(X_test, y_test)
         print("Accuracy_LR_softmax:", score)
