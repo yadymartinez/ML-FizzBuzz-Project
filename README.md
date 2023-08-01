@@ -79,6 +79,7 @@ the number.
 **Return**: X and y as a numpy array. 
                     X contain the number encoding in binary representation. 
                     y the labels fizz, buzz, fizzbuzz or none according to the number.  
+                    
 ```python:
 # Encoder the labels ('Fizz','FizzBuzz', 'Buzz', 'None') in (0,1,2,3)
 label_encoder = preprocessing.LabelEncoder()
@@ -86,18 +87,18 @@ y = label_encoder.fit_transform(y.T)
 ```  
 Two additional helper function were defined:
 
-          # A boolean function return true or false if value is multiple of the 'multiple' value
+ ```python:
+# A boolean function return true or false if value is multiple of the 'multiple' value    
+ def multiple(value, multiple):
+    return True if value % multiple == 0 else False 
           
-            ```python:
-             def multiple(value, multiple):
-                 return True if value % multiple == 0 else False 
-          
-             # Function return the encoding number in binary representation in length of num_digits
-              def binary_encode(i, num_digits):
-                 return np.array([i >> d & 1 for d in range(num_digits)])
-             ```  
-  ### Preprocessing data
-       StandardScaler() method calculates the mean and the standard deviation to use later for scaling the data. This method fits the parameters of the data and then transforms it. Standardize             features by removing the mean and scaling to unit variance.
+# Function return the encoding number in binary representation in length of num_digits
+def binary_encode(i, num_digits):
+    return np.array([i >> d & 1 for d in range(num_digits)])
+```  
+### Preprocessing data
+
+StandardScaler() method calculates the mean and the standard deviation to use later for scaling the data. This method fits the parameters of the data and then transforms it. Standardize             features by removing the mean and scaling to unit variance.
        
        ```
         # Preprocessing the data
