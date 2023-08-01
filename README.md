@@ -54,7 +54,7 @@ exponential) to the scores. The equation to compute $s_k(x)$ should look familia
 Regression prediction (see Equation 1).
 
 $$
-$s_k(x)$
+s_k(x) = \theta_k^T \cdot x
 $$
 
 <image src="Eqn1.png" alt="Descripción de la imagen">           Eqn (1)
