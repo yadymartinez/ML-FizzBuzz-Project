@@ -2,17 +2,17 @@
 Machine Learning solution for Fizz Buzz problem
 
 ## Fizz Buzz problem description 
-    Write a program that given the numbers from 1 to 100 print “None” for each number. 
-    But for multiples of the three print “Fizz” instead of “None” and for the multiples of five print  “Buzz”.
-    For numbers  which are multiples of both three an five print “FizzBuzz”.
+Write a program that given the numbers from 1 to 100 print “None” for each number. 
+But for multiples of the three print “Fizz” instead of “None” and for the multiples of five print  “Buzz”.
+For numbers  which are multiples of both three an five print “FizzBuzz”.
     
-    There are many approaches to solving this problem. The most popular and well-known solution to this problem 
-    involves using conditional statements with a loop 
+There are many approaches to solving this problem. The most popular and well-known solution to this problem 
+involves using conditional statements with a loop 
     
-        1. If the number (x) is divisible by three, the result must be “Fizz”
-        2. If the number (x) is divisible by five, the result must be “Buzz”
-        3. If the number (x) is divisible by both three and five, the result must be “FizzBuzz” 
-        4. Else the result must be “None”
+    1. If the number (x) is divisible by three, the result must be “Fizz”
+    2. If the number (x) is divisible by five, the result must be “Buzz”
+    3. If the number (x) is divisible by both three and five, the result must be “FizzBuzz” 
+    4. Else the result must be “None”
 
 <image src="FizzBuzz.png" alt="Descripción de la imagen">
 
@@ -52,7 +52,7 @@ Machine Learning solution for Fizz Buzz problem
               exponential) to the scores. The equation to compute sk(x) should look familiar, as it is just like the equation for Linear
               Regression prediction (see Equation 1).
               
-    <image src="Eqn1.png" alt="Descripción de la imagen">           Eqn (1)
+<image src="Eqn1.png" alt="Descripción de la imagen">           Eqn (1)
 
               Just like the Logistic Regression classifier, the Softmax Regression classifier predicts the class with the
               highest estimated probability (which is simply the class with the highest score), as shown in Equation 2.
