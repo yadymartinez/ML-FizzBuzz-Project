@@ -55,16 +55,24 @@ Regression prediction (see Equation 1).
 
 $s_k(x) = \theta_k^T \cdot x$   Equation (1)
 
+$σ(s(x))k$ is the estimated probability that the instance x belongs to class k given the scores of each class for that instance.
+
 Just like the Logistic Regression classifier, the Softmax Regression classifier predicts the class with the
 highest estimated probability (which is simply the class with the highest score), as shown in Equation 2.
 
-$\hat{y} = \theta_k^T \cdot x $ Equation (2)
+$\hat{y}= argmax_k \sigma (s(x))_k = \frac{exp(s_k(x))}{\sum_{j=1}^{K}exp(s_j(x))}$ Equation (2)
 
-The objective is to have a model that estimates a high probability for the target class (and consequently
-a low probability for the other classes). Minimizing the cost function shown in Equation 3, called the cross
-entropy, should lead to this objective because it penalizes the model when it estimates a low probability for a target class.
-             
-$$s_k(x) = \theta_k^T \cdot x $$Equation (3)
+$\sigma(s(x))_k$ is the estimated probability that the instance $x$ belongs to class $k$ given the scores of each class for that instance.
+
+The objective is to have a model that estimates a high probability for the target class (and consequently a low probability for the other
+classes). Minimizing the cost function cross entropy. The gradient vector of this cost function with regards to $\theta_k$ is given by Equation 3:
+
+Cross entropy gradient vector for class k
+
+$\bigtriangledown_\theta_k J(\Theta)$Equation (3)
+
+Now you can compute the gradient vector for every class, then use Gradient Descent(or any other optimization algorithm) to find the parameter matrix Θ that minimizes
+the cost function.
 
               
 ### Generate FizzBuzz data
