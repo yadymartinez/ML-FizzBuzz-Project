@@ -1,40 +1,9 @@
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#ML-FizzBuzz-Project">ML-FizzBuzz-Project</a>
-      <ul>
-        <li><a href="#fizz-buzz-problem-description">Fizz Buzz Problem Description</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#FizzBuzz-solution-using-Machine-Learning-approaches">FizzBuzz solution using Machine Learning approaches</a>
-      <ul>
-        <li><a href="#Structure-as-a-multi-class-classification-problem">Structure the problem as a multi-class classification</a></li>
-        <li><a href="#Generate-the-fizzbuzz-data">Generate the fizzbuzz data</a></li>      
-        <li><a href="#Preprocessing-data">Preprocessing data</a></li>    
-        <li><a href="#Build-a-logistic-regression-model">Build a logistic regression model</a></li>    
-        <li><a href="#Report-the-accuracy-score">Report the accuracy score with test data (1-100)</a></li>    
-        <li><a href="#Best-perform-on-different-classification-algorithms-using-a-ten-fold-cross-validation">Select the best perform on different classification algorithms using a ten fold-cross validation</a></li>    
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
-
-
 <!-- ML-FizzBuzz-Project -->
-## ML-FizzBuzz-Project
+# ML-FizzBuzz-Project
 Machine Learning solution for Fizz Buzz problem
 
 <!-- Fizz Buzz Problem Description -->
-### Fizz-buzz-problem-description 
+## Fizz-buzz-problem-description 
     Write a program that given the numbers from 1 to 100 print “None” for each number. But for multiples of the three print “Fizz” instead of “None” and for the multiples of five print  “Buzz”.
     For numbers  which are multiples of both three an five print “FizzBuzz”.
     There are many approaches to solving this problem. The most popular and well-known solution to this problem involves using conditional statements with a loop 
@@ -48,9 +17,9 @@ Machine Learning solution for Fizz Buzz problem
 <!-- ML-FizzBuzz-Project -->
 ## FizzBuzz-solution-using-Machine-Learning-approaches  
 
-## Structure-as-a-multi-class-classification-problem 
+### Structure-as-a-multi-class-classification-problem 
       Fizzbuzz can be modeled as a multi-class classification problem.
-       **Input**: The most common option, is convert the number to its binary representation. The binary representation can be fixed-length and each digit of the fixed-length binary representation                  can be an input feature. 
+       Input: The most common option, is convert the number to its binary representation. The binary representation can be fixed-length and each digit of the fixed-length binary representation                  can be an input feature. 
 
        **Target**: The target can be one of the four classes - fizz, buzz, fizzbuzz or none. The model should predict which of the classes is most likely for an input number. After the four classes                    are encoded and the model is built, it will return one of four prediction labels. So we will also need a decoder function to convert the label to the corresponding output.
 
@@ -66,7 +35,7 @@ Machine Learning solution for Fizz Buzz problem
 
               The Logistic Regression model can be generalized to support multiple classes directly, without having to train and combine multiple binary classifiers. This is called Softmax                        Regression, or Multinomial Logistic Regression.
               
-  ## Generate-the-fizzbuzz-data         
+  ### Generate-the-fizzbuzz-data         
        To generate the FizzBuzz data, the Dataset_Generator_ML_Fizz_Buzz(length_data, num_digits) function was defined: 
            **Input** : length_data: the total of integer that we use in the model. 
                        num_digits: the fixed-length binary representation can be 8, 10, 16, 32, 64. 
@@ -94,7 +63,7 @@ Machine Learning solution for Fizz Buzz problem
               def binary_encode(i, num_digits):
                  return np.array([i >> d & 1 for d in range(num_digits)])
              ```  
-  ## Preprocessing-data
+  ### Preprocessing-data
        StandardScaler() method calculates the mean and the standard deviation to use later for scaling the data. This method fits the parameters of the data and then transforms it. Standardize             features by removing the mean and scaling to unit variance.
        ```
         # Preprocessing the data
@@ -104,7 +73,7 @@ Machine Learning solution for Fizz Buzz problem
         X_test_std = sc.transform(X_test)
         ```
     
-  ## Build-a-logistic-regression-model 
+  ### Build-a-logistic-regression-model 
        For uses the cross-entropy loss if the ‘multi_class’ option is set to ‘multinomial’. 
        Implementation in python
        ```
@@ -113,7 +82,7 @@ Machine Learning solution for Fizz Buzz problem
        softmax_reg.fit(X, y)
        ```
     
-  ## Report-the-accuracy-score
+  ### Report-the-accuracy-score
        The accuracy score was calculated with the test data.
        ```
         score = softmax_reg.score(X_test, y_test)
@@ -121,7 +90,7 @@ Machine Learning solution for Fizz Buzz problem
         The model report an: Accuracy_LR_softmax: 0.53 %
         ```
         
-  ## Best-perform-on-different-classification-algorithms-using-a-ten-fold-cross-validation
+  ### Best-perform-on-different-classification-algorithms-using-a-ten-fold-cross-validation
        
        kFold = KFold(n_splits=10, random_state=42, shuffle=True)
        For each algorithm classification were calculated the accuracy score and save in a numpy by row. 
