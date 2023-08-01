@@ -11,7 +11,7 @@
     <li>
       <a href="#FizzBuzz-solution-using-Machine-Learning-approaches">FizzBuzz solution using Machine Learning approaches</a>
       <ul>
-        <li><a href="#Structure the problem as a multi-class classification problema">Structure the problem as a multi-class classification problema </a></li>
+        <li><a href="#Structure-as-a-multi-class-classification-problem">Structure the problem as a multi-class classification</a></li>
         <li><a href="#Generate the fizzbuzz data ">Generate the fizzbuzz data</a></li>      
         <li><a href="#Divide the data into training and test set">Divide the data into training and test set</a></li> 
         <li><a href="#Preprocessing data">Preprocessing data</a></li>    
@@ -46,7 +46,7 @@ Machine Learning solution for Fizz Buzz problem
 <!-- ML-FizzBuzz-Project -->
 ## FizzBuzz-solution-using-Machine-Learning-approaches  
 
-## Structure the problem as a multi-class classification problem 
+## Structure-as-a-multi-class-classification-problem 
       Fizzbuzz can be modeled as a multi-class classification problem.
        Input: The most common option, is convert the number to its binary representation. The binary representation can be fixed-length and each digit of the fixed-length binary representation                  can be an input feature. 
 
