@@ -34,8 +34,9 @@ Machine Learning solution for Fizz Buzz problem
 
         Model: Logistic Regression (also called Logit Regression) is commonly used to estimate the probability that an instance belongs to a particular class. 
                Logistic Regression is a classification algorithm used when the dependent (target) variables are categorical in nature- meaning the data can be 
-               grouped into discrete outputs $`\sqrt{2}`$ {0, 1, ..., k − 1}.
+               grouped into discrete outputs {0, 1, ..., k − 1}.
                When $a \ne 0$, there are two solutions to $(ax^2 + bx + c = 0)$ and they are 
+               
                $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
                Since we are dealing with categorical variables, logistical models must be used to map probabilities to predicted labels of the data. 
 
