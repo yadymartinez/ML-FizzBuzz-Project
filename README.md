@@ -9,10 +9,10 @@ For numbers  which are multiples of both three an five print “FizzBuzz”.
 There are many approaches to solving this problem. The most popular and well-known solution to this problem 
 involves using conditional statements with a loop 
     
-    1. If the number (x) is divisible by three, the result must be “Fizz”
-    2. If the number (x) is divisible by five, the result must be “Buzz”
-    3. If the number (x) is divisible by both three and five, the result must be “FizzBuzz” 
-    4. Else the result must be “None”
+1. If the number (x) is divisible by three, the result must be “Fizz”
+1. If the number (x) is divisible by five, the result must be “Buzz”
+1. If the number (x) is divisible by both three and five, the result must be “FizzBuzz” 
+1. Else the result must be “None”
 
 <image src="FizzBuzz.png" alt="Descripción de la imagen">
 
