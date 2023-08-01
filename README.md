@@ -28,7 +28,8 @@
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
-c 
+
+
 <!-- ML-FizzBuzz-Project -->
 ## ML-FizzBuzz-Project
 Machine Learning solution for Fizz Buzz problem
