@@ -74,41 +74,49 @@ Machine Learning solution for Fizz Buzz problem
             Return: X and y as a numpy array. 
                     X contain the number encoding in binary representation. 
                     y the labels fizz, buzz, fizzbuzz or none according to the number.  
-
+                   ```
                    # Encoder the labels ('Fizz','FizzBuzz', 'Buzz', 'None') in (0,1,2,3)
                     label_encoder = preprocessing.LabelEncoder()
-                     y = label_encoder.fit_transform(y.T)
+                     y = label_encoder.fit_transform(y.T) 
+                   ```  
 
           Two additional helper function were defined:
 
           # A boolean function return true or false if value is multiple of the 'multiple' value
-           def multiple(value, multiple):
-                return True if value % multiple == 0 else False 
-
-          # Function return the encoding number in binary representation in length of num_digits
-            def binary_encode(i, num_digits):
-            return np.array([i >> d & 1 for d in range(num_digits)])
-            
+            ```
+             def multiple(value, multiple):
+                 return True if value % multiple == 0 else False 
+          
+             # Function return the encoding number in binary representation in length of num_digits
+              def binary_encode(i, num_digits):
+                 return np.array([i >> d & 1 for d in range(num_digits)])
+             ```  
   ## Preprocessing-data
        StandardScaler() method calculates the mean and the standard deviation to use later for scaling the data. This method fits the parameters of the data and then transforms it. Standardize             features by removing the mean and scaling to unit variance.
+       ```
         # Preprocessing the data
         sc = preprocessing.StandardScaler()
         sc.fit(X_train)
         X_train_std = sc.transform(X_train)
         X_test_std = sc.transform(X_test)
+        ```
     
   ## Build-a-logistic-regression-model 
-       For uses the cross-entropy loss if the ‘multi_class’ option is set to ‘multinomial’. And 
+       For uses the cross-entropy loss if the ‘multi_class’ option is set to ‘multinomial’. 
        Implementation in python
+       ```
        # Logistic Regression Model for multi-class classification, l2-regularization
        softmax_reg = LogisticRegression(multi_class="multinomial", solver="lbfgs")
        softmax_reg.fit(X, y)
+       ```
     
   ## Report-the-accuracy-score
        The accuracy score was calculated with the test data.
+       ```
         score = softmax_reg.score(X_test, y_test)
         print("Accuracy_LR_softmax:", score)
         The model report an: Accuracy_LR_softmax: 0.53 %
+        ```
         
   ## Best-perform-on-different-classification-algorithms-using-a-ten-fold-cross-validation
        
