@@ -71,15 +71,15 @@ $$s_k(x) = \theta_k^T \cdot x $$Equation (3)
 
 To generate the FizzBuzz data, the Dataset_Generator_ML_Fizz_Buzz(length_data, num_digits) function was defined: 
 
-**Input**: length_data: the total of integer that we use in the model.
-           num_digits: the fixed-length binary representation can be 8, 10, 16, 32, 64. 
+**Input**: -length_data: the total of integer that we use in the model.
+-num_digits: the fixed-length binary representation can be 8, 10, 16, 32, 64. 
 
 For example if length_data= 1024 we create the Input data as binary encoding from 1, 2, 3,...,1024 and num_digits is the length of the binary representation that will be encoding
 the number. 
 
 **Return**: X and y as a numpy array. 
-                    X contain the number encoding in binary representation. 
-                    y the labels fizz, buzz, fizzbuzz or none according to the number.  
+-X contain the number encoding in binary representation. 
+-y the labels fizz, buzz, fizzbuzz or none according to the number.  
                     
 ```python:
 # Encoder the labels ('Fizz','FizzBuzz', 'Buzz', 'None') in (0,1,2,3)
@@ -122,12 +122,11 @@ softmax_reg.fit(X, y)
 ### Report the accuracy score
 
 The accuracy score was calculated with the test data.
-       ```
-        score = softmax_reg.score(X_test, y_test)
-        print("Accuracy_LR_softmax:", score)
-        The model report an: Accuracy_LR_softmax: 0.53 %
-        ```
-        
+```python:
+score = softmax_reg.score(X_test, y_test)
+print("Accuracy_LR_softmax:", score)
+```
+*The model report an: Accuracy_LR_softmax: 0.53 *      
   ### Best perform on different classification algorithms using a ten fold Cross-Validation
        
        kFold = KFold(n_splits=10, random_state=42, shuffle=True)
