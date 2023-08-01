@@ -52,18 +52,18 @@ Machine Learning solution for Fizz Buzz problem
               exponential) to the scores. The equation to compute sk(x) should look familiar, as it is just like the equation for Linear
               Regression prediction (see Equation 1).
               
-<image src="Eqn1.png" alt="Descripción de la imagen">    (1)
+<image src="Eqn1.png" alt="Descripción de la imagen">   Eqn (1)
 
               Just like the Logistic Regression classifier, the Softmax Regression classifier predicts the class with the
               highest estimated probability (which is simply the class with the highest score), as shown in Equation 2.
 
-<image src="Eqn2.png" alt="Descripción de la imagen">   (2)
+<image src="Eqn2.png" alt="Descripción de la imagen">  Eqn (2)
 
              The objective is to have a model that estimates a high probability for the target class (and consequently
              a low probability for the other classes). Minimizing the cost function shown in Equation 3, called the cross
              entropy, should lead to this objective because it penalizes the model when it estimates a low probability for a target class.
              
-<image src="Eqn3.png" alt="Descripción de la imagen">   (3)
+<image src="Eqn3.png" alt="Descripción de la imagen">   Eqn (3)
 
               
   ### Generate FizzBuzz data         
