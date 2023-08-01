@@ -58,7 +58,7 @@ $s_k(x) = \theta_k^T \cdot x$   Equation (1)
 Just like the Logistic Regression classifier, the Softmax Regression classifier predicts the class with the
 highest estimated probability (which is simply the class with the highest score), as shown in Equation 2.
 
-$$s_k(x) = \theta_k^T \cdot x $$Equation (2)
+$\hat{y} = \theta_k^T \cdot x $ Equation (2)
 
 The objective is to have a model that estimates a high probability for the target class (and consequently
 a low probability for the other classes). Minimizing the cost function shown in Equation 3, called the cross
