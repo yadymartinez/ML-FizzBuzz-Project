@@ -67,7 +67,7 @@ classes). Minimizing the cost function cross entropy. The gradient vector of thi
 
 Cross entropy gradient vector for class k
 
-$\bigtriangledown \theta_k J(\Theta) = \frac{1}{m}\sum_{i=1}^{m}(\hat{p}_k^{(i)}-y_k^{(i)})x^{(i)} $ Equation (3)
+$\bigtriangledown \theta_k J(\Theta) = \frac{1}{m}\sum_{i=1}^{m}(\hat{p}_k^{(i)}-y_k^{(i)})x^{(i)}$ Equation (3)
 
 Now you can compute the gradient vector for every class, then use Gradient Descent(or any other optimization algorithm) to find the parameter matrix $\Theta$ that minimizes
 the cost function.|
