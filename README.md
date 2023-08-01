@@ -58,7 +58,7 @@ $s_k(x) = \theta_k^T \cdot x$   Equation (1)
 Just like the Logistic Regression classifier, the Softmax Regression classifier predicts the class with the
 highest estimated probability (which is simply the class with the highest score), as shown in Equation 2.
 
-$\hat{y} = argmax_k \theta(s(x))_k = \frac{exp(s_k(x))}{\sum_{j=1}^{K}exp(s_j(x))}$ Equation (2)
+$\hat{y}$ = argmax_k $\theta(s(x))_k = \frac{exp(s_k(x))}{\sum_{j=1}^{K}exp(s_j(x))}$ Equation (2)
 
 $\sigma(s(x))_k$ is the estimated probability that the instance $x$ belongs to class $k$ given the scores of each class for that instance.
 
