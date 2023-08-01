@@ -42,7 +42,7 @@ Machine Learning solution for Fizz Buzz problem
         3. If the number (x) is divisible by both three and five, the result must be “FizzBuzz” 
         4. Else the result must be “None”
 
-<image src="ML-FizzBuzz-Project/FizzBuzz.png" alt="Descripción de la imagen">
+<image src="/FizzBuzz.png" alt="Descripción de la imagen">
 
 <!-- ML-FizzBuzz-Project -->
 ## FizzBuzz-solution-using-Machine-Learning-approaches  
