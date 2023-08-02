@@ -160,14 +160,19 @@ print("Accuracy_LR_softmax:", score)
  4. Stochastic Gradient Descent Classifier (SGDC)
 
 *Accuracy_CV:LR score =  0.5337521416333523*
+
 *Accuracy_CV:KNN score =  0.20625356938892062*
+
 *Accuracy_CV:RF score =  0.2718065867123548*
+
 *Accuracy_CV:SVM score =  0.5337521416333523*
+
 *Accuracy_CV:SGDC score =  0.4163620788121073*
     
  To report the best accuracy were calculated the maximum of the accuracy’s mean for each algorithm.
  
 *The best accuracy model is: LR score =  0.5337521416333523*
+
 *The best accuracy model is: SVM score =  0.5337521416333523* 
 
 ## FizzBuzz solution using Neural Network approaches
