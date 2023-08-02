@@ -187,7 +187,8 @@ Neural Network Model
 
 The first model architecture is simple, with 100 hidden neurons in one layer and omit batch training.
 
-Setting all of the initial weights to the same value (zero) in the network negates any benefit to having multiple neurons in a layer. Randomly initializing the weights is necessary:
+Setting all of the initial weights to the same value (zero) in the network negates any benefit to having 
+multiple neurons in a layer. Randomly initializing the weights is necessary:
 
 h1_w = tf.Variable(tf.random_normal([input_dim, h1_dim], stddev=0.1))
 
@@ -197,4 +198,10 @@ NN_Model report: *97.0% Accuracy_NN_Model*
 
 ### FizzBuzzProject_NN_Model_2
 
+The second model architecture was defned as neual network of two layers deep -- one hidden layer and one output layer
+with ReLU activation using softmax cross-entropy as cost function.
+The model is training with 1000 epochs in 128 batch.
+
 https://joelgrus.com/2016/05/23/fizz-buzz-in-tensorflow/
+
+NN_Model_2 report: *97.0% Accuracy_NN_Model*
