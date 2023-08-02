@@ -204,4 +204,4 @@ The model is training with 1000 epochs in 128 batch.
 
 https://joelgrus.com/2016/05/23/fizz-buzz-in-tensorflow/
 
-NN_Model_2 report: *97.0% Accuracy_NN_Model*
+NN_Model_2 report: *98.0% Accuracy_NN_Model_2*
