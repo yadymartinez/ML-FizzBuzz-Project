@@ -156,3 +156,12 @@ print("Accuracy_LR_softmax:", score)
  The best models are Logistic Regression and Support Vector Machine with accuracy = 0.5351020408163266 
 
 ## FizzBuzz solution using Neural Network approaches
+
+### Solution 1
+
+[This link]([http://example.net/](https://stackoverflow.com/questions/48879125/fizzbuzz-neural-network)](https://stackoverflow.com/questions/48879125/fizzbuzz-neural-network))) has no title attribute.
+
+https://stackoverflow.com/questions/48879125/fizzbuzz-neural-network
+### Solution 2
+[This link]([http://example.net/](https://joelgrus.com/2016/05/23/fizz-buzz-in-tensorflow/)) has no title attribute.
+
