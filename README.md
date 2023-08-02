@@ -187,12 +187,13 @@ Neural Network Model
 
 The first model architecture is simple, with 100 hidden neurons in one layer and omit batch training.
 
-Setting all of the initial weights to the same value (zero) in your network negates any benefit to having multiple neurons in a layer. Randomly initializing the weights is necessary:
+Setting all of the initial weights to the same value (zero) in the network negates any benefit to having multiple neurons in a layer. Randomly initializing the weights is necessary:
 
 h1_w = tf.Variable(tf.random_normal([input_dim, h1_dim], stddev=0.1))
 
 https://stackoverflow.com/questions/48879125/fizzbuzz-neural-network
 
+NN_Model report: *97.0% Accuracy_NN_Model*
 
 ### Solution 2
 
