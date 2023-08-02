@@ -79,8 +79,11 @@ the cost function.
 ### Prerequisites
 
 import tensorflow as tf
+
 import numpy as np
-import sklearn 
+
+import sklearn
+
 import coverage
               
 ### Generate FizzBuzz data
