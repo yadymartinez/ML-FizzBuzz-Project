@@ -67,9 +67,10 @@ output = np.vectorize(fizz_buzz)(numbers, teY)
 print(output)
 
 actuals = [fizz_buzz(i, fizz_buzz_encode(i).argmax()) for i in numbers]
-
+incorrect = 0
 for i, (predicted, actual) in enumerate(zip(output, actuals)):
     if predicted != actual:
         print("{0} {1} {2}".format(i+1, predicted, actual))
+        incorrect+=1
 
-
+print("{}% Accuracy_NN_Model_2\n\n".format(len(actuals) - incorrect * 100 / len(output)))
