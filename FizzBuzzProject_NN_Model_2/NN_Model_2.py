@@ -2,10 +2,7 @@ import numpy as np
 import tensorflow as tf
 import tensorflow.compat.v1 as tf
 tf.disable_v2_behavior()
-import coverage
 
-#cov = coverage.Coverage()
-#cov.start()
 
 def binary_encode(i, num_digits):
     return np.array([i >> d & 1 for d in range(num_digits)])
@@ -67,6 +64,7 @@ teX = np.transpose(binary_encode(numbers, NUM_DIGITS))
 
 teY = sess.run(predict_op, feed_dict={X: teX})
 output = np.vectorize(fizz_buzz)(numbers, teY)
+print(output)
 
 actuals = [fizz_buzz(i, fizz_buzz_encode(i).argmax()) for i in numbers]
 
@@ -74,7 +72,4 @@ for i, (predicted, actual) in enumerate(zip(output, actuals)):
     if predicted != actual:
         print("{0} {1} {2}".format(i+1, predicted, actual))
 
-#cov.stop()
-#cov.save()
 
-#cov.html_report()
