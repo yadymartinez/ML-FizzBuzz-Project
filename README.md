@@ -78,14 +78,12 @@ the cost function.
 
 ### Prerequisites
 
+```python:
 import tensorflow as tf
-
 import numpy as np
-
 import sklearn
-
 import coverage
-              
+``` 
 ### Generate FizzBuzz data
 
 To generate the FizzBuzz data, the Dataset_Generator_ML_Fizz_Buzz(length_data, num_digits) function was defined: 
