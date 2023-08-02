@@ -159,9 +159,17 @@ print("Accuracy_LR_softmax:", score)
 
 ### Solution 1
 
-[This link]([http://example.net/](https://stackoverflow.com/questions/48879125/fizzbuzz-neural-network)](https://stackoverflow.com/questions/48879125/fizzbuzz-neural-network))) has no title attribute.
+Neural Network Model
+
+The first model architecture is simple, with 100 hidden neurons in one layer and omit batch training.
+
+Setting all of the initial weights to the same value (zero) in your network negates any benefit to having multiple neurons in a layer. Randomly initializing the weights is necessary:
+
+h1_w = tf.Variable(tf.random_normal([input_dim, h1_dim], stddev=0.1))
 
 https://stackoverflow.com/questions/48879125/fizzbuzz-neural-network
-### Solution 2
-[This link]([http://example.net/](https://joelgrus.com/2016/05/23/fizz-buzz-in-tensorflow/)) has no title attribute.
 
+
+### Solution 2
+
+https://joelgrus.com/2016/05/23/fizz-buzz-in-tensorflow/
