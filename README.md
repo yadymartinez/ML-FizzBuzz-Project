@@ -175,6 +175,9 @@ print("Accuracy_LR_softmax:", score)
 
 *The best accuracy model is: SVM score =  0.5337521416333523* 
 
+### Coverage Test
+
+
 ## FizzBuzz solution using Neural Network approaches
 
 ### Solution 1
