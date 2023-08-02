@@ -2,10 +2,7 @@ import tensorflow as tf
 import numpy as np
 import tensorflow.compat.v1 as tf
 tf.disable_v2_behavior()
-import coverage
-from threadpoolctl import threadpool_limits
-#cov = coverage.Coverage()
-#cov.start()
+
 
 
 def fizzbuzz(start, end):
@@ -156,8 +153,8 @@ with tf.Session() as sess:
     print(decoded)
     #test_accuracy = sess.run(accuracy, feed_dict={X: train_x, Y: train_y})
     #print(i, ":", train_accuracy)
+    actual = np.array(fizzbuzz(1, 100))
+    for i in range(len(decoded)):
+        if decoded[i] != actual[i]:
+            print("{0} {1} {2}".format(i + 1, decoded[i], actual[i]))
 
-#cov.stop()
-#cov.save()
-
-#cov.html_report()
