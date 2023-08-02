@@ -195,6 +195,6 @@ https://stackoverflow.com/questions/48879125/fizzbuzz-neural-network
 
 NN_Model report: *97.0% Accuracy_NN_Model*
 
-### Solution 2
+### FizzBuzzProject_NN_Model_2
 
 https://joelgrus.com/2016/05/23/fizz-buzz-in-tensorflow/
