@@ -177,6 +177,7 @@ print("Accuracy_LR_softmax:", score)
 
 ### Coverage Test
 
+Coverage Test- Coverage report: 93%
 
 ## FizzBuzz solution using Neural Network approaches
 
