@@ -153,7 +153,7 @@ print("Accuracy_LR_softmax:", score)
     
  To report the best accuracy were calculated the maximum of the accuracy’s mean for each algorithm.
  
- The best models are Logistic Regression and Support Vector Machine with accuracy = 0.5351020408163266 
+*The best models are Logistic Regression and Support Vector Machine with accuracy = 0.5351020408163266* 
 
 ## FizzBuzz solution using Neural Network approaches
 
