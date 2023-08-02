@@ -154,7 +154,10 @@ with tf.Session() as sess:
     #test_accuracy = sess.run(accuracy, feed_dict={X: train_x, Y: train_y})
     #print(i, ":", train_accuracy)
     actual = np.array(fizzbuzz(1, 100))
+    incorrect = 0
     for i in range(len(decoded)):
         if decoded[i] != actual[i]:
             print("{0} {1} {2}".format(i + 1, decoded[i], actual[i]))
+            incorrect += 1
 
+    print("{}% Accuracy_NN_Model\n\n".format(len(actual)-incorrect * 100 / len(decoded)))
