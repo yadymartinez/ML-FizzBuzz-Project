@@ -117,7 +117,7 @@ def binary_encode(i, num_digits):
 ### Preprocessing data
 
 StandardScaler() method calculates the mean and the standard deviation to use later for scaling the data. 
-This method fits the parameters of the data and then transforms it. Standardizefeatures by removing the 
+This method fits the parameters of the data and then transforms it. Standardize features by removing the 
 mean and scaling to unit variance.
        
 ``` python:
