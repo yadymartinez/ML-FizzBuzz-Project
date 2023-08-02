@@ -67,7 +67,7 @@ $\sigma(s(x))_k$ is the estimated probability that the instance $x$ belongs to c
 The objective is to have a model that estimates a high probability for the target class (and consequently a low probability for the other
 classes). Minimizing the cost function cross entropy. The gradient vector of this cost function with regards to $\theta_k$ is given by Equation 3:
 
-Cross entropy gradient vector for class k
+Cross entropy gradient vector for class $k$
 
 $\bigtriangledown \theta_k J(\Theta) = \frac{1}{m}\sum_{i=1}^{m}(\hat{p}_k^{(i)}-y_k^{(i)}) x^{(i)}$ Equation (3)
 
