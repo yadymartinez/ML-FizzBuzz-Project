@@ -54,7 +54,7 @@ print("Accuracy_LR_softmax:", score)
 # Training a KNN classifier
 knn = KNeighborsClassifier(n_neighbors=7).fit(X_train, y_train)
 accuracy = knn.score(X_test, y_test)
-#print("Accuracy_KNN:", accuracy)
+
 
 
 # Training a RF classifier
@@ -121,8 +121,13 @@ means = []
 for i in range(0,len(model)):
     means.append(np.mean(scores[i,:]))
 
-print("The best accuracy model is: " + model[means.index(max(means))] + " score = ", max(means))
 
+for i in range(len(means)):
+    print("Accuracy_CV:" + model[i] + " score = ", means[i])
+
+for i in range(len(means)):
+    if means[i] == max(means):
+       print("The best accuracy model is: " + model[i] + " score = ", max(means))
 
 cov.stop()
 cov.save()
