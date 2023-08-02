@@ -75,6 +75,13 @@ Now, the gradient vector for every class can be compute, using Gradient Descent(
 the cost function.
 
 <image src="FizzBuzzModel.PNG" alt="Descripción de la imagen">
+
+### Prerequisites
+
+import tensorflow as tf
+import numpy as np
+import sklearn 
+import coverage
               
 ### Generate FizzBuzz data
 
