@@ -181,7 +181,7 @@ Coverage Test- Coverage report: 93%
 
 ## FizzBuzz solution using Neural Network approaches
 
-### Solution 1
+### FizzBuzzProject_NN_Model
 
 Neural Network Model
 
